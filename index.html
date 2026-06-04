@@ -16,30 +16,46 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 .nav-links a{font-size:13px;color:var(--muted);text-decoration:none;font-family:var(--font-mono);letter-spacing:0.03em;transition:color 0.2s}
 .nav-links a:hover{color:var(--text)}
 section{padding:5rem 2.5rem;max-width:900px;margin:0 auto}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:6rem;padding-bottom:3rem;position:relative}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:6rem;padding-bottom:3rem}
+.hero-inner{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center}
 .hero-tag{font-family:var(--font-mono);font-size:12px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.5rem;display:flex;align-items:center;gap:0.5rem}
 .hero-tag::before{content:'';width:24px;height:1px;background:var(--accent)}
-h1{font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:300;line-height:1.05;letter-spacing:-0.02em;margin-bottom:1.5rem}
+h1{font-family:var(--font-display);font-size:clamp(2.4rem,6vw,4.8rem);font-weight:300;line-height:1.05;letter-spacing:-0.02em;margin-bottom:1.2rem}
 h1 em{font-style:italic;color:var(--accent)}
-.hero-sub{font-size:16px;color:var(--muted);max-width:480px;line-height:1.8;margin-bottom:2.5rem}
+.hero-sub{font-size:15px;color:var(--muted);max-width:460px;line-height:1.8;margin-bottom:2rem}
 .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.65rem 1.4rem;font-family:var(--font-mono);font-size:13px;letter-spacing:0.03em;border-radius:2px;text-decoration:none;transition:all 0.2s;cursor:pointer;border:none}
-.btn-primary{background:var(--accent);color:#0a0a0a}
+.btn-primary{background:var(--accent);color:#0a0a0a;font-weight:500}
 .btn-primary:hover{background:#b8e054}
 .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
-.btn-ghost:hover{border-color:var(--text)}
-.hero-stats{display:flex;gap:3rem;margin-top:4rem;padding-top:3rem;border-top:1px solid var(--border)}
-.stat-num{font-family:var(--font-display);font-size:2.2rem;font-weight:300;color:var(--accent)}
-.stat-label{font-size:12px;color:var(--muted);font-family:var(--font-mono);letter-spacing:0.05em}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.avatar-placeholder{width:180px;height:180px;border-radius:50%;border:2px solid var(--border);background:var(--surface2);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);font-family:var(--font-mono);font-size:11px;text-align:center;gap:0.5rem}
+.hero-stats{display:flex;gap:3rem;margin-top:3rem;padding-top:3rem;border-top:1px solid var(--border)}
+.stat-num{font-family:var(--font-display);font-size:2rem;font-weight:300;color:var(--accent)}
+.stat-label{font-size:11px;color:var(--muted);font-family:var(--font-mono);letter-spacing:0.05em}
 .section-label{font-family:var(--font-mono);font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:3rem;display:flex;align-items:center;gap:1rem}
 .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 h2{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:300;margin-bottom:1rem;line-height:1.2}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+.about-text{font-size:15px;color:var(--muted);line-height:1.9}
+.about-text p{margin-bottom:1rem}
+.about-text strong{color:var(--text)}
+.about-cards{display:flex;flex-direction:column;gap:1rem}
+.about-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:1rem 1.25rem}
+.about-card-label{font-family:var(--font-mono);font-size:10px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.4rem}
+.about-card-val{font-size:14px;color:var(--text)}
+.cv-block{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:2rem;margin-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem}
+.cv-info h3{font-family:var(--font-display);font-size:1.4rem;font-weight:300;margin-bottom:0.4rem}
+.cv-info p{font-size:13px;color:var(--muted)}
+.cv-actions{display:flex;gap:0.75rem}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:2rem}
 .skill-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:1.25rem;transition:border-color 0.2s}
 .skill-card:hover{border-color:var(--accent)}
 .skill-cat{font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;margin-bottom:0.75rem}
 .skill-items{display:flex;flex-wrap:wrap;gap:0.4rem}
 .tag{background:var(--surface2);border:1px solid var(--border);padding:0.25rem 0.6rem;border-radius:2px;font-family:var(--font-mono);font-size:11px;color:var(--muted)}
+.lang-dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
+.lang-dot.fill{background:var(--accent)}
 .projects-list{display:flex;flex-direction:column;gap:1px;margin-top:2rem;border:1px solid var(--border);border-radius:4px;overflow:hidden}
 .project-item{background:var(--surface);padding:1.5rem;border-bottom:1px solid var(--border);transition:background 0.2s}
 .project-item:last-child{border-bottom:none}
@@ -73,8 +89,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);display:flex;justi
 .footer-text{font-family:var(--font-mono);font-size:11px;color:var(--muted)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.lang-dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
-.lang-dot.fill{background:var(--accent)}
+@media(max-width:600px){.hero-inner{grid-template-columns:1fr}.avatar-placeholder{display:none}.about-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -82,68 +97,100 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);display:flex;justi
 <nav>
   <span class="nav-logo">MK // portfolio</span>
   <div class="nav-links">
+    <a href="#about">À propos</a>
     <a href="#competences">Compétences</a>
     <a href="#projets">Projets</a>
-    <a href="#experience">Expérience</a>
+    <a href="#experience">Parcours</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="accueil">
-  <div class="hero-tag"><span class="dot"></span>Disponible – Alternance sept. 2026</div>
-  <h1>Mayas<br><em>Khemri</em></h1>
-  <p class="hero-sub">Futur étudiant en Master Data Science · Passionné par l'analyse de données, le machine learning et l'intelligence artificielle · Basé à Angers, France.</p>
-  <div class="hero-ctas">
-    <a class="btn btn-primary" href="mailto:mayaskhemri93@gmail.com">Me contacter →</a>
-    <a class="btn btn-ghost" href="#projets">Voir mes projets</a>
-  </div>
-  <div class="hero-stats">
-    <div><div class="stat-num">4</div><div class="stat-label">Projets publiés</div></div>
-    <div><div class="stat-num">95%</div><div class="stat-label">Précision IA (LERIA)</div></div>
-    <div><div class="stat-num">3</div><div class="stat-label">Langues</div></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag"><span class="dot"></span>Disponible – Alternance sept. 2026</div>
+      <h1>Mayas<br><em>Khemri</em></h1>
+      <p class="hero-sub">Futur étudiant en Master Data Science · Passionné par l'analyse de données, le machine learning et l'intelligence artificielle · Basé à Angers, France.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Me contacter →</a>
+        <a class="btn btn-ghost" href="cv_mayas_khemri.pdf" download>⬇ Télécharger mon CV</a>
+        <a class="btn btn-ghost" href="#projets">Voir mes projets</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">4</div><div class="stat-label">Projets publiés</div></div>
+        <div><div class="stat-num">95%</div><div class="stat-label">Précision IA (LERIA)</div></div>
+        <div><div class="stat-num">3</div><div class="stat-label">Langues</div></div>
+      </div>
+    </div>
+    <div>
+
+    <div>
+      <img src="photo.jpg" alt="Mayas Khemri" style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:2px solid var(--border);">
+    </div>
+    </div>
   </div>
 </section>
 
+<!-- À PROPOS -->
+<section id="about">
+  <div class="section-label">00 — À propos</div>
+  <h2>Qui suis-je ?</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Je suis <strong>Mayas Khemri</strong>, étudiant en troisième année de <strong>Licence Informatique</strong> à l'Université d'Angers, et futur étudiant en <strong>Master Data Science</strong> à la rentrée 2026.</p>
+      <p>Né en Algérie, j'ai obtenu mon baccalauréat Mathématiques avec <strong>mention Très Bien (16,54/20)</strong> avant de rejoindre la France pour poursuivre mes études. Ce parcours m'a appris l'autonomie, l'adaptabilité et la persévérance.</p>
+      <p>Passionné par la donnée sous toutes ses formes — de l'analyse exploratoire au deep learning — je cherche à mettre mes compétences au service de projets à fort impact. Je suis particulièrement attiré par les domaines de la <strong>finance</strong>, des <strong>télécoms</strong> et de la <strong>santé</strong>.</p>
+      <p>En dehors du code, je m'engage dans des actions de solidarité avec <strong>Angers ZéroDéchet</strong> et la <strong>Banque Alimentaire</strong>, parce que la tech doit aussi servir la société.</p>
+    </div>
+    <div class="about-cards">
+      <div class="about-card"><div class="about-card-label">📍 Localisation</div><div class="about-card-val">Angers, France</div></div>
+      <div class="about-card"><div class="about-card-label">🎓 Formation actuelle</div><div class="about-card-val">L3 Informatique · Université d'Angers</div></div>
+      <div class="about-card"><div class="about-card-label">🎯 Objectif</div><div class="about-card-val">Alternance Data Science / Data Analyst 2026–2027</div></div>
+      <div class="about-card"><div class="about-card-label">💼 Disponibilité</div><div class="about-card-val">Septembre 2026 · Paris / Remote</div></div>
+      <div class="about-card"><div class="about-card-label">📧 Contact</div><div class="about-card-val">mayaskhemri93@gmail.com</div></div>
+      <div class="about-card"><div class="about-card-label">📞 Téléphone</div><div class="about-card-val">+33 7 48 37 07 15</div></div>
+    </div>
+  </div>
+  <div style="margin-top:3rem">
+    <div class="section-label" style="margin-bottom:1.5rem">Mon CV</div>
+    <div class="cv-block">
+      <div class="cv-info">
+        <h3>Curriculum Vitæ — Mayas Khemri</h3>
+        <p>L3 Informatique → Master Data Science · 2026</p>
+        <p style="margin-top:0.4rem;font-size:12px;color:var(--muted)">Python · SQL · Power BI · Machine Learning · Deep Learning</p>
+      </div>
+      <div class="cv-actions">
+        <a class="btn btn-primary" href="cv_mayas_khemri.pdf" download>⬇ Télécharger</a>
+        <a class="btn btn-ghost" href="cv_mayas_khemri.pdf" target="_blank">👁 Voir</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
 <section id="competences">
   <div class="section-label">01 — Compétences</div>
   <h2>Stack technique</h2>
-  <p style="color:var(--muted);max-width:500px;margin-bottom:0.5rem">Des outils maîtrisés au fil de projets académiques et de recherche concrets.</p>
   <div class="skills-grid">
-    <div class="skill-card">
-      <div class="skill-cat">Data & Analyse</div>
-      <div class="skill-items"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">R</span></div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-cat">Bases de données</div>
-      <div class="skill-items"><span class="tag">SQL avancé</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-cat">Visualisation & BI</div>
-      <div class="skill-items"><span class="tag">Power BI</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span></div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-cat">Machine Learning & DL</div>
-      <div class="skill-items"><span class="tag">PyTorch</span><span class="tag">CNN</span><span class="tag">Régression</span><span class="tag">Classification</span><span class="tag">NLP</span></div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-cat">Développement</div>
-      <div class="skill-items"><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Git</span><span class="tag">Bash</span><span class="tag">Linux</span><span class="tag">HTML/CSS</span><span class="tag">JS</span></div>
-    </div>
-    <div class="skill-card">
-      <div class="skill-cat">Bureautique</div>
-      <div class="skill-items"><span class="tag">Excel avancé</span><span class="tag">TCD</span><span class="tag">VBA</span></div>
-    </div>
+    <div class="skill-card"><div class="skill-cat">Data & Analyse</div><div class="skill-items"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">R</span></div></div>
+    <div class="skill-card"><div class="skill-cat">Bases de données</div><div class="skill-items"><span class="tag">SQL avancé</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span></div></div>
+    <div class="skill-card"><div class="skill-cat">Visualisation & BI</div><div class="skill-items"><span class="tag">Power BI</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span></div></div>
+    <div class="skill-card"><div class="skill-cat">Machine Learning & DL</div><div class="skill-items"><span class="tag">PyTorch</span><span class="tag">CNN</span><span class="tag">XGBoost</span><span class="tag">Régression</span><span class="tag">NLP</span></div></div>
+    <div class="skill-card"><div class="skill-cat">Développement</div><div class="skill-items"><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Git</span><span class="tag">Bash</span><span class="tag">Linux</span><span class="tag">HTML/CSS</span><span class="tag">JS</span></div></div>
+    <div class="skill-card"><div class="skill-cat">Bureautique</div><div class="skill-items"><span class="tag">Excel avancé</span><span class="tag">TCD</span><span class="tag">VBA</span></div></div>
   </div>
   <div style="margin-top:2rem;background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:1.25rem">
     <div class="skill-cat">Langues</div>
     <div style="display:flex;flex-direction:column;gap:0.75rem;margin-top:0.5rem">
-      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px">Français</span><div style="display:flex;gap:0.5rem"><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div></div></div>
-      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px">Arabe</span><div style="display:flex;gap:0.5rem"><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div></div></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px">Français (natif)</span><div style="display:flex;gap:0.5rem"><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div></div></div>
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px">Arabe (natif)</span><div style="display:flex;gap:0.5rem"><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div></div></div>
       <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px">Anglais (B2)</span><div style="display:flex;gap:0.5rem"><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot fill"></div><div class="lang-dot"></div></div></div>
     </div>
   </div>
 </section>
 
+<!-- PROJETS -->
 <section id="projets">
   <div class="section-label">02 — Projets</div>
   <h2>Ce que j'ai construit</h2>
@@ -152,121 +199,79 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);display:flex;justi
     <div class="project-item">
       <div class="project-header">
         <span class="project-name">Dance Hero – Détection de rythme par IA</span>
-        <div class="project-meta">
-          <span class="project-year">2026</span>
-          <a class="gh-link" href="https://github.com/Mayaskhemri/Dance-Hero" target="_blank">GitHub →</a>
-        </div>
+        <div class="project-meta"><span class="project-year">2026</span><a class="gh-link" href="https://github.com/Mayaskhemri/Dance-Hero" target="_blank">GitHub →</a></div>
       </div>
-      <p class="project-desc">Projet de recherche au Laboratoire LERIA (Univ. Angers), encadré par M. Benoît Da Mota. Détection automatique du rythme dans des vidéos via Optical Flow & Deep Learning (RAFT). Exploration et comparaison d'approches : optical flow dense/sparse, pose estimation, depth estimation. Évaluation de modèles MediaPipe, OpenPose, RAFT, MiDaS. Traitement du signal, lissage, détection de pics.</p>
-      <div class="project-stack">
-        <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">SciPy</span><span class="tag">Pandas</span><span class="tag">librosa</span><span class="tag">FFmpeg</span><span class="tag">Plotly</span><span class="tag">Seaborn</span>
-      </div>
+      <p class="project-desc">Projet de recherche au Laboratoire LERIA (Univ. Angers), encadré par M. Benoît Da Mota. Détection automatique du rythme dans des vidéos via Optical Flow & Deep Learning (RAFT). Exploration et comparaison d'approches : optical flow dense/sparse, pose estimation, depth estimation. Évaluation de modèles MediaPipe, OpenPose, RAFT, MiDaS.</p>
+      <div class="project-stack"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">SciPy</span><span class="tag">Pandas</span><span class="tag">librosa</span><span class="tag">FFmpeg</span><span class="tag">Plotly</span></div>
       <div class="project-highlight">→ 95% de précision · Résultats validés par l'encadrant · Équipe de 3</div>
     </div>
 
     <div class="project-item">
       <div class="project-header">
         <span class="project-name">Churn Predictor – Pipeline ML & App Interactive</span>
-        <div class="project-meta">
-          <span class="project-year">Mai 2026</span>
-          <a class="gh-link" href="https://github.com/Mayaskhemri/churn-prediction" target="_blank">GitHub →</a>
-        </div>
+        <div class="project-meta"><span class="project-year">Mai 2026</span><a class="gh-link" href="https://github.com/Mayaskhemri/churn-prediction" target="_blank">GitHub →</a></div>
       </div>
       <p class="project-desc">Conception d'un projet de bout en bout prédisant le risque de résiliation client (télécoms). Nettoyage des données, feature engineering (charges par mois), et entraînement de modèles de classification. Sélection automatique de la Régression Logistique après une validation croisée rigoureuse. Développement d'une interface Streamlit interactive pour simuler et prédire des profils clients en temps réel.</p>
-      <div class="project-stack">
-        <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">Streamlit</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Joblib</span>
-      </div>
+      <div class="project-stack"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">Streamlit</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Joblib</span></div>
       <div class="project-highlight">→ ROC-AUC : 0.85 · Validation croisée (5-fold) · Interface de simulation live</div>
     </div>
 
     <div class="project-item">
       <div class="project-header">
         <span class="project-name">Classification d'images – CNN & Machine Learning</span>
-        <div class="project-meta">
-          <span class="project-year">Mars 2026</span>
-          <a class="gh-link" href="https://github.com/Mayaskhemri/image-classification" target="_blank">GitHub →</a>
-        </div>
+        <div class="project-meta"><span class="project-year">Mars 2026</span>
+        <a class="gh-link" href="https://github.com/Mayaskhemri/image-classification" target="_blank">GitHub →</a>
       </div>
-      <p class="project-desc">Projet de machine learning en L3 visant à reconnaître différentes catégories d'images couleur 32×32. Comparaison de plusieurs approches : k-NN, régression logistique, réseaux de neurones et CNN. Implémentation d'un CNN avec PyTorch incluant BatchNorm, Dropout, augmentation de données, early stopping et scheduler de learning rate.</p>
-      <div class="project-stack">
-        <span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">CNN</span><span class="tag">Scikit-learn</span><span class="tag">NumPy</span><span class="tag">PIL</span>
-      </div>
+      <p class="project-desc">Projet ML en L3 visant à reconnaître différentes catégories d'images couleur 32×32. Comparaison de plusieurs approches : k-NN, régression logistique et CNN. Implémentation d'un CNN PyTorch avec BatchNorm, Dropout, augmentation de données, early stopping et scheduler de learning rate.</p>
+      <div class="project-stack"><span class="tag">Python</span><span class="tag">PyTorch</span><span class="tag">CNN</span><span class="tag">Scikit-learn</span><span class="tag">NumPy</span></div>
       <div class="project-highlight">→ Architecture 3 couches conv · Adam + ReduceLROnPlateau · 10 classes</div>
     </div>
 
     <div class="project-item">
       <div class="project-header">
         <span class="project-name">Dashboard Power BI – Analyse de KPIs</span>
-        <div class="project-meta">
-          <span class="project-year">2026</span>
-          <span class="gh-soon">GitHub – bientôt</span>
-        </div>
+        <div class="project-meta"><span class="project-year">2026</span><span class="gh-soon">GitHub – bientôt</span></div>
       </div>
       <p class="project-desc">Pipeline complet de bout en bout : extraction depuis PostgreSQL, nettoyage et structuration des données sous Python/Pandas, puis conception de tableaux de bord interactifs Power BI pour l'aide à la décision. Indicateurs pensés pour des profils non techniques.</p>
-      <div class="project-stack">
-        <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span><span class="tag">Pandas</span>
-      </div>
-      <div class="project-highlight">→ Code à venir sur GitHub</div>
+      <div class="project-stack"><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span><span class="tag">Pandas</span></div>
     </div>
 
   </div>
 </section>
 
+<!-- PARCOURS -->
 <section id="experience">
   <div class="section-label">03 — Parcours</div>
   <h2>Formation & Expérience</h2>
   <div style="margin-top:2rem">
     <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;margin-bottom:1rem">FORMATION</div>
     <div class="formation-list">
-      <div class="formation-item">
-        <div><div class="formation-name">Master Informatique – Data Science</div><div class="formation-school">En cours de recherche · rentrée 2026</div></div>
-        <span class="formation-year">2026–2028</span>
-      </div>
-      <div class="formation-item">
-        <div><div class="formation-name">Licence Informatique</div><div class="formation-school">Université d'Angers · Statistiques, BDD, Algorithmique, IA</div></div>
-        <span class="formation-year">2023–2026</span>
-      </div>
-      <div class="formation-item">
-        <div><div class="formation-name">Année Préparatoire – Science & Technologie</div><div class="formation-school">ENSTA · Alger</div></div>
-        <span class="formation-year">2022–2023</span>
-      </div>
-      <div class="formation-item">
-        <div><div class="formation-name">Baccalauréat Mathématiques</div><div class="formation-school">Mention Très Bien · 16,54/20</div></div>
-        <span class="formation-year">2022</span>
-      </div>
+      <div class="formation-item"><div><div class="formation-name">Master Informatique – Data Science</div><div class="formation-school">En cours de recherche · rentrée 2026</div></div><span class="formation-year">2026–2028</span></div>
+      <div class="formation-item"><div><div class="formation-name">Licence Informatique</div><div class="formation-school">Université d'Angers · Statistiques, BDD, Algorithmique, IA</div></div><span class="formation-year">2023–2026</span></div>
+      <div class="formation-item"><div><div class="formation-name">Année Préparatoire – Science & Technologie</div><div class="formation-school">ENSTA · Alger</div></div><span class="formation-year">2022–2023</span></div>
+      <div class="formation-item"><div><div class="formation-name">Baccalauréat Mathématiques</div><div class="formation-school">Mention Très Bien · 16,54/20</div></div><span class="formation-year">2022</span></div>
     </div>
   </div>
   <div style="margin-top:2.5rem">
-    <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;margin-bottom:1rem">EXPÉRIENCE</div>
+    <div style="font-family:var(--font-mono);font-size:11px;color:var(--accent);letter-spacing:0.08em;margin-bottom:1rem">EXPÉRIENCE & BÉNÉVOLAT</div>
     <div class="xp-list">
       <div class="xp-item">
         <div class="xp-period">2026</div>
-        <div>
-          <div class="xp-role">Chercheur – Projet IA</div>
-          <div class="xp-company">Laboratoire LERIA · Université d'Angers</div>
-          <div class="xp-desc">Projet encadré par M. Benoît Da Mota. Détection automatique du rythme dans des vidéos par Deep Learning. Équipe de 3 · Résultats validés à 95% de précision.</div>
-        </div>
+        <div><div class="xp-role">Chercheur – Projet IA</div><div class="xp-company">Laboratoire LERIA · Université d'Angers</div><div class="xp-desc">Projet encadré par M. Benoît Da Mota. Détection automatique du rythme dans des vidéos par Deep Learning. Équipe de 3 · Résultats validés à 95% de précision.</div></div>
       </div>
       <div class="xp-item">
         <div class="xp-period">2023 – Auj.</div>
-        <div>
-          <div class="xp-role">1er Équipier</div>
-          <div class="xp-company">Domino's Pizza</div>
-          <div class="xp-desc">Gestion quotidienne de 150+ commandes en pic d'affluence. Coordination des équipes, réduction du temps d'attente moyen de 10%. Suivi des stocks et optimisation des encaissements.</div>
-        </div>
+        <div><div class="xp-role">1er Équipier</div><div class="xp-company">Domino's Pizza</div><div class="xp-desc">Gestion quotidienne de 150+ commandes en pic d'affluence. Coordination des équipes, réduction du temps d'attente moyen de 10%. Suivi des stocks et optimisation des encaissements.</div></div>
       </div>
       <div class="xp-item">
         <div class="xp-period">2023 – Auj.</div>
-        <div>
-          <div class="xp-role">Bénévole</div>
-          <div class="xp-company">Angers ZéroDéchet & Banque Alimentaire</div>
-          <div class="xp-desc">Actions de solidarité et engagement citoyen en parallèle des études et de l'emploi.</div>
-        </div>
+        <div><div class="xp-role">Bénévole</div><div class="xp-company">Angers ZéroDéchet & Banque Alimentaire</div><div class="xp-desc">Actions de solidarité et engagement citoyen en parallèle des études et de l'emploi.</div></div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="section-label">04 — Contact</div>
   <div class="contact-block">
@@ -279,6 +284,7 @@ footer{padding:2rem 2.5rem;border-top:1px solid var(--border);display:flex;justi
       <a class="contact-link" href="tel:+33748370715">☎ +33 7 48 37 07 15</a>
       <a class="contact-link" href="https://www.linkedin.com/in/mayas-khemri-b84a34272/" target="_blank">in LinkedIn →</a>
       <a class="contact-link" href="https://github.com/Mayaskhemri" target="_blank">⌥ GitHub →</a>
+      <a class="contact-link" href="cv_mayas_khemri.pdf" download>⬇ Télécharger mon CV</a>
     </div>
   </div>
 </section>
